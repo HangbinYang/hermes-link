@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hermes-link"
+version = "0.1.0"
+description = "Secure companion service for hermes-agent"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [
+  { name = "HermesPilot" }
+]
+keywords = ["hermes", "hermes-agent", "link", "companion", "relay", "cli"]
+dependencies = [
+  "croniter>=3.0.0,<4.0.0",
+  "fastapi>=0.115.0,<1.0.0",
+  "httpx>=0.27.0,<1.0.0",
+  "platformdirs>=4.2.0,<5.0.0",
+  "pydantic>=2.8.0,<3.0.0",
+  "PyYAML>=6.0.2,<7.0.0",
+  "qrcode>=8.0,<9.0",
+  "typer>=0.12.3,<1.0.0",
+  "uvicorn>=0.30.0,<1.0.0",
+  "websockets>=15.0.1,<16.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0,<9.0.0",
+]
+
+[project.scripts]
+hermes-link = "hermes_link.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hermes_link"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
