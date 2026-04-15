@@ -175,7 +175,9 @@ tests/          自动化测试
 
 ## 与 HermesPilot 的关系
 
-这个仓库是 `Hermes Link` 的独立仓库形态；同时它也可以被镜像或嵌入到更大的 `HermesPilot` monorepo 中。
+`HermesPilot` 是未来用于连接和管理由 `Hermes Link` 提供能力的个人 Hermes 节点的配套 App。
+
+这个 App 目前还没有正式上架，所以这里先作为后续公开发布前的预留说明。
 
 ## 许可证
 

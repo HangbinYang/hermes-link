@@ -175,7 +175,9 @@ tests/          Automated tests
 
 ## Relationship to HermesPilot
 
-This repository is the standalone home of `Hermes Link`. It can also be mirrored or embedded into the larger `HermesPilot` monorepo.
+`HermesPilot` is the companion app that will connect to and manage personal Hermes nodes powered by `Hermes Link`.
+
+The app has not been publicly released yet, so this section is intentionally a placeholder for the upcoming launch.
 
 ## License
 
